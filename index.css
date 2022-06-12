@@ -1,0 +1,94 @@
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+/* --global-- */
+body, html{
+  margin: 0;
+  padding: 0;
+}
+body {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  min-height:100vh;
+  background: var(--pale-blue);
+  font-size: 16px;
+}
+p {
+  color: var(--desaturated-blue);
+}
+
+/* --card-- */
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 20px;
+  max-width: 300px;
+  overflow: hidden;
+  text-align: center;
+}
+.card-container > img {
+  width: 100%;
+}
+
+/* --pay-- */
+.pay-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--very-pale-blue);
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+.pay-container > div { 
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px 0 15px;
+}
+.pay-container > a:hover {
+  opacity: .8;
+}
+#pay-price {
+  color: var(--desaturated-blue);
+}
+
+/* --buttons-- */
+button {
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  width: 80%;
+  height:40px;
+  color: white;
+  font-weight: bold;
+  margin: 10px 0;
+  cursor: pointer;
+}
+#payment-btn {
+  background: var(--bright-blue);
+}
+#payment-btn:hover {
+  opacity: .8;
+}
+#cancel-btn {
+  background: transparent;
+  color: var(--desaturated-blue);
+}
+#cancel-btn:hover {
+  color: black;  
+}
+
+/* --footer-- */
+footer {
+  position: fixed;
+  bottom: 5px;
+}
